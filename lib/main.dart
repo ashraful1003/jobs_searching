@@ -5,6 +5,8 @@ import 'package:november8/screen/login.dart';
 import 'package:november8/screen/login2.dart';
 import 'package:november8/screen/phonemail.dart';
 import 'package:november8/screen/registration.dart';
+import 'package:november8/screen/scroll.dart';
+import 'package:november8/screen/scroll2.dart';
 import 'package:november8/screen/search.dart';
 import 'package:november8/screen/select_skills.dart';
 import 'package:november8/screen/user_id.dart';
@@ -35,8 +37,10 @@ class _MyAppState extends State<MyApp> {
         ("gender"): (context) => Gender(),
         ("phonemail"): (context) => PhonEmail(),
         ("user_id"): (context) => UserID(),
+        ("scroll"): (context) => Scroll(),
+        ("scroll2"): (context) => ScrollTwo(),
       },
-      home: UserID(),
+      home: ScrollTwo(),
     );
   }
 }

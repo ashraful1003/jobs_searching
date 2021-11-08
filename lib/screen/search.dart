@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:november8/widgets/buttons.dart';
 
 class Search extends StatefulWidget {
   Search({Key? key}) : super(key: key);
@@ -64,34 +65,13 @@ class _SearchState extends State<Search> {
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
-            child: InkWell(
-              onTap: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(20.0, 0, 0, 0),
-                height: 50.0,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    color: Colors.indigo[900],
-                    borderRadius: BorderRadius.circular(10.0)),
-                child: Stack(
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Icon(
-                        Icons.search,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Search",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
-                      ),
-                    )
-                  ],
-                ),
-              ),
+            child: Buttons(
+              onTapp: () {},
+              data: "Search",
+              height: 50.0,
+              color: Colors.indigo[900],
+              size: 18,
+              iconData: Icons.search,
             ),
           ),
           SizedBox(
@@ -99,34 +79,15 @@ class _SearchState extends State<Search> {
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
-            child: InkWell(
-              onTap: () {},
-              child: Container(
-                padding: EdgeInsets.fromLTRB(20.0, 0, 0, 0),
-                height: 40.0,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.indigo, width: 2.0),
-                    borderRadius: BorderRadius.circular(10.0)),
-                child: Stack(
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Icon(
-                        Icons.shopping_bag,
-                        color: Colors.deepOrange[900],
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "View New Jobs",
-                        style: TextStyle(color: Colors.grey, fontSize: 18),
-                      ),
-                    )
-                  ],
-                ),
-              ),
+            child: Buttons(
+              onTapp: () {},
+              height: 40.0,
+              borderColor: Colors.indigo,
+              iconData: Icons.shopping_bag,
+              iconColor: Colors.deepOrange[900],
+              textColor: Colors.grey,
+              data: "View New Jobs",
+              size: 18.0,
             ),
           ),
         ],
