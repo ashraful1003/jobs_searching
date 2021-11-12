@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:november8/screen/alert_box.dart';
 import 'package:november8/screen/bdjobs.dart';
 import 'package:november8/screen/gender.dart';
 import 'package:november8/screen/login.dart';
@@ -39,8 +40,9 @@ class _MyAppState extends State<MyApp> {
         ("user_id"): (context) => UserID(),
         ("scroll"): (context) => Scroll(),
         ("scroll2"): (context) => ScrollTwo(),
+        ("alert_box"): (context) => AlertBox(),
       },
-      home: ScrollTwo(),
+      home: AlertBox(),
     );
   }
 }
